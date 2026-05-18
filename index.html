@@ -84,26 +84,6 @@
   .project-card:hover { transform: translateY(-6px); box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
   .project-card:hover::after { opacity: 1; }
 
-  /* DASHBOARD PREVIEW */
-  .project-dashboard {
-    width: 100%; height: 200px; overflow: hidden; position: relative;
-    background: #0a0f1a; border-bottom: 1px solid var(--border);
-    cursor: pointer;
-  }
-  .project-dashboard img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.4s ease; opacity: 0.85; }
-  .project-dashboard:hover img { transform: scale(1.04); opacity: 1; }
-  .dashboard-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(to bottom, transparent 40%, rgba(15,22,32,0.95) 100%);
-    display: flex; align-items: flex-end; padding: 0.8rem 1rem;
-  }
-  .dashboard-label {
-    font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--muted);
-    display: flex; align-items: center; gap: 0.4rem;
-  }
-  .dashboard-label::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent3); }
-
   .project-body { padding: 1.8rem 2rem 2rem; }
   .project-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1.2rem; gap: 1rem; }
   .project-icon-wrap { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
@@ -304,10 +284,6 @@
 
       <!-- PROJECT 1: ECOMMERCE -->
       <div class="project-card p1 reveal">
-        <div class="project-dashboard" onclick="openLightbox('https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/ecommerce/Ecommerce_Dashboard.JPG','E-Commerce Sales Dashboard')">
-          <img src="https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/ecommerce/Ecommerce_Dashboard.JPG" alt="Ecommerce Dashboard" loading="lazy">
-          <div class="dashboard-overlay"><div class="dashboard-label">Click to expand dashboard</div></div>
-        </div>
         <div class="project-body">
           <div class="project-header">
             <div class="project-icon-wrap icon-blue">🛒</div>
@@ -344,10 +320,6 @@
 
       <!-- PROJECT 2: FINANCE -->
       <div class="project-card p2 reveal">
-        <div class="project-dashboard" onclick="openLightbox('https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/finance/Finance_Dashboard.JPG','Finance Stock Analysis Dashboard')">
-          <img src="https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/finance/Finance_Dashboard.JPG" alt="Finance Dashboard" loading="lazy">
-          <div class="dashboard-overlay"><div class="dashboard-label">Click to expand dashboard</div></div>
-        </div>
         <div class="project-body">
           <div class="project-header">
             <div class="project-icon-wrap icon-purple">📈</div>
@@ -384,10 +356,6 @@
 
       <!-- PROJECT 3: HEALTHCARE -->
       <div class="project-card p3 reveal">
-        <div class="project-dashboard" onclick="openLightbox('https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/healthcare/Healthcare_Dashboard.JPG','Healthcare Analytics Dashboard')">
-          <img src="https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/healthcare/Healthcare_Dashboard.JPG" alt="Healthcare Dashboard" loading="lazy">
-          <div class="dashboard-overlay"><div class="dashboard-label">Click to expand dashboard</div></div>
-        </div>
         <div class="project-body">
           <div class="project-header">
             <div class="project-icon-wrap icon-green">🏥</div>
@@ -424,10 +392,6 @@
 
       <!-- PROJECT 4: RETAIL -->
       <div class="project-card p4 reveal">
-        <div class="project-dashboard" onclick="openLightbox('https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/retail/Retail_Dashboard.JPG','Retail Sales Analytics Dashboard')">
-          <img src="https://raw.githubusercontent.com/athinmk/data-analytics-portfolio/main/projects/retail/Retail_Dashboard.JPG" alt="Retail Dashboard" loading="lazy">
-          <div class="dashboard-overlay"><div class="dashboard-label">Click to expand dashboard</div></div>
-        </div>
         <div class="project-body">
           <div class="project-header">
             <div class="project-icon-wrap icon-pink">🛍️</div>
