@@ -179,6 +179,12 @@
   .cert-link-hint { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.08em; color: var(--muted); margin-top: 0.8rem; transition: color 0.2s; }
   .cert-card.cert-green:hover .cert-link-hint { color: var(--accent3); }
   .cert-card.cert-blue:hover .cert-link-hint { color: var(--accent); }
+  .cert-card.cert-purple::before { background: linear-gradient(90deg, var(--accent2), transparent); }
+  .cert-card.cert-purple:hover { border-color: rgba(167,139,250,0.35); }
+  .cert-icon-purple { background: rgba(167,139,250,0.1); border: 1px solid rgba(167,139,250,0.2); }
+  .cert-badge-purple { color: var(--accent2); background: rgba(167,139,250,0.08); border: 1px solid rgba(167,139,250,0.2); }
+  .cert-issuer-purple { color: var(--accent2); font-weight: 500; font-size: 0.88rem; margin-bottom: 0.15rem; }
+  .cert-card.cert-purple:hover .cert-link-hint { color: var(--accent2); }
   @media (max-width: 900px) { .cert-grid { grid-template-columns: 1fr; } }
 
   /* CONTACT */
@@ -276,7 +282,7 @@
         <div class="about-info-grid">
           <div class="about-info-item"><div class="about-info-label">Location</div><div class="about-info-value">Kerala, India</div></div>
           <div class="about-info-item"><div class="about-info-label">Status</div><div class="about-info-value">Open to Work</div></div>
-          <div class="about-info-item"><div class="about-info-label">Diploma</div><div class="about-info-value">Adv. Diploma, Data Analytics, 2026</div></div>
+          <div class="about-info-item"><div class="about-info-label">Diploma</div><div class="about-info-value">Adv. Diploma, Data Analytics · 2026</div></div>
           <div class="about-info-item"><div class="about-info-label">Degree</div><div class="about-info-value">BSc Zoology, 2024</div></div>
         </div>
       </div>
@@ -522,6 +528,17 @@
           <div class="cert-issuer-blue">Deloitte Australia · Forage</div>
           <div class="cert-year">COMPLETED · 2026</div>
           <p class="cert-desc">Completed a job simulation involving data analysis and forensic technology — created a data dashboard using Tableau and used Excel to classify data and draw business conclusions.</p>
+          <div class="cert-link-hint">↗ View Certificate</div>
+        </div>
+      </a>
+      <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_6a12c0bf7cd74ef7762c554b_1779626839704_completion_certificate.pdf" target="_blank" class="cert-card cert-purple reveal">
+        <div class="cert-icon cert-icon-purple">💻</div>
+        <div>
+          <div class="cert-badge cert-badge-purple">Virtual Simulation</div>
+          <div class="cert-title">Technology Simulation</div>
+          <div class="cert-issuer-purple">Deloitte Australia · Forage</div>
+          <div class="cert-year">COMPLETED · 2026</div>
+          <p class="cert-desc">Completed a job simulation involving development and coding — wrote a proposal for creating a dashboard as part of the technology consulting workflow.</p>
           <div class="cert-link-hint">↗ View Certificate</div>
         </div>
       </a>
