@@ -155,6 +155,32 @@
   .edu-year { font-family: var(--font-mono); font-size: 0.67rem; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.7rem; }
   .edu-desc { color: var(--light); font-size: 0.87rem; line-height: 1.6; }
 
+  /* CERTIFICATIONS */
+  #certifications { background: var(--bg); }
+  .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .cert-card { display: flex; align-items: flex-start; gap: 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 1.8rem 2rem; text-decoration: none; color: inherit; transition: all 0.3s; position: relative; overflow: hidden; }
+  .cert-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; }
+  .cert-card.cert-green::before { background: linear-gradient(90deg, var(--accent3), transparent); }
+  .cert-card.cert-blue::before { background: linear-gradient(90deg, var(--accent), transparent); }
+  .cert-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+  .cert-card.cert-green:hover { border-color: rgba(52,211,153,0.35); }
+  .cert-card.cert-blue:hover { border-color: rgba(56,189,248,0.35); }
+  .cert-icon { width: 52px; height: 52px; border-radius: 13px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+  .cert-icon-green { background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.2); }
+  .cert-icon-blue { background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.2); }
+  .cert-badge { display: inline-block; font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 4px; margin-bottom: 0.45rem; }
+  .cert-badge-green { color: var(--accent3); background: rgba(52,211,153,0.08); border: 1px solid rgba(52,211,153,0.2); }
+  .cert-badge-blue { color: var(--accent); background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); }
+  .cert-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 800; color: var(--text); letter-spacing: -0.02em; margin-bottom: 0.2rem; line-height: 1.25; }
+  .cert-issuer-green { color: var(--accent3); font-weight: 500; font-size: 0.88rem; margin-bottom: 0.15rem; }
+  .cert-issuer-blue { color: var(--accent); font-weight: 500; font-size: 0.88rem; margin-bottom: 0.15rem; }
+  .cert-year { font-family: var(--font-mono); font-size: 0.63rem; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.6rem; }
+  .cert-desc { color: var(--light); font-size: 0.83rem; line-height: 1.6; }
+  .cert-link-hint { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.08em; color: var(--muted); margin-top: 0.8rem; transition: color 0.2s; }
+  .cert-card.cert-green:hover .cert-link-hint { color: var(--accent3); }
+  .cert-card.cert-blue:hover .cert-link-hint { color: var(--accent); }
+  @media (max-width: 900px) { .cert-grid { grid-template-columns: 1fr; } }
+
   /* CONTACT */
   #contact { background: var(--bg2); }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -207,6 +233,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#education">Education</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -463,14 +490,39 @@
           <p class="edu-desc">Scientific foundation in research methodology, data observation, and analytical thinking — directly applied to statistical analysis across all projects.</p>
         </div>
       </div>
-      <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_6a12c0bf7cd74ef7762c554b_1779614393106_completion_certificate.pdf" target="_blank" class="edu-card simulation reveal" style="text-decoration:none;color:inherit;display:flex;align-items:flex-start;gap:2rem;">
-        <div class="edu-icon edu-icon-green">🔐</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-pad">
+    <div class="section-label reveal">// Certifications</div>
+    <h2 class="section-title reveal">Licences &amp;<br>Certifications</h2>
+    <div class="section-line reveal"></div>
+    <div class="cert-grid">
+      <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_6a12c0bf7cd74ef7762c554b_1779614393106_completion_certificate.pdf" target="_blank" class="cert-card cert-green reveal">
+        <div class="cert-icon cert-icon-green">🔐</div>
         <div>
-          <div class="edu-badge badge-green">Virtual Simulation</div>
-          <div class="edu-degree">Cybersecurity Simulation</div>
-          <div class="edu-school-green">Deloitte (Forage)</div>
-          <div class="edu-year">COMPLETED · 2026</div>
-          <p class="edu-desc">Completed Deloitte Australia's Cyber job simulation on Forage — read and analysed web activity logs, supported a client through a cybersecurity breach, and identified suspicious user activity through targeted investigation.</p>
+          <div class="cert-badge cert-badge-green">Virtual Simulation</div>
+          <div class="cert-title">Cybersecurity Simulation</div>
+          <div class="cert-issuer-green">Deloitte Australia · Forage</div>
+          <div class="cert-year">COMPLETED · 2026</div>
+          <p class="cert-desc">Read and analysed web activity logs, supported a client through a cybersecurity breach, and identified suspicious user activity through targeted investigation.</p>
+          <div class="cert-link-hint">↗ View Certificate</div>
+        </div>
+      </a>
+      <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_6a12c0bf7cd74ef7762c554b_1779621318122_completion_certificate.pdf" target="_blank" class="cert-card cert-blue reveal">
+        <div class="cert-icon cert-icon-blue">📊</div>
+        <div>
+          <div class="cert-badge cert-badge-blue">Virtual Simulation</div>
+          <div class="cert-title">Data Analytics Simulation</div>
+          <div class="cert-issuer-blue">Deloitte Australia · Forage</div>
+          <div class="cert-year">COMPLETED · 2026</div>
+          <p class="cert-desc">Completed a job simulation involving data analysis and forensic technology — created a data dashboard using Tableau and used Excel to classify data and draw business conclusions.</p>
+          <div class="cert-link-hint">↗ View Certificate</div>
         </div>
       </a>
     </div>
